@@ -3,22 +3,25 @@
   left: 50%;
   top: 10%; }
   .clock__hand--minute {
-    width: 10px;
-    height: 300px;
     position: absolute;
+    width: 10px;
+    height: 150px;
+    margin-top: 150px;
     background-color: blue;
     transform-origin: bottom;
+    border-radius: 70%;
     -webkit-animation: clock-hand-rotate 3600s linear infinite;
             animation: clock-hand-rotate 3600s linear infinite; }
   .clock__hand--second {
     width: 10px;
     height: 300px;
+    border-radius: 70%;
     background-color: red;
     position: absolute;
     transform-origin: bottom;
     -webkit-animation: clock-hand-rotate 60s linear infinite;
             animation: clock-hand-rotate 60s linear infinite; }
-    .clock__hand--second::before {
+    .clock__hand--second::after {
       content: "";
       position: absolute;
       height: 30px;
